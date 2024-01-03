@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
+import {StyledBtn, SupperBtn} from "./components/Button.styled";
+import {Link} from "./components/Link.styled";
+import {Menu} from "./components/Menu.styled";
 
 function App() {
     return (
@@ -23,38 +26,6 @@ function App() {
 
 export default App;
 
-const StyledBtn = styled.button`
-  border: none;
-  background-color: #9b1818;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: aliceblue;
-  font-size: 2rem;
-  font-weight: bold;
-
-  &:hover {
-    background-color: #ff90c3;
-  }
-
-  &:last-child {
-    background-color: #c9ff11;
-  }
-`
-
-const Link = styled.a`
-  color: blue;
-  font-size: 2rem;
-  font-weight: bold;
-  background-color: transparent;
-  padding: 0;
-  
-`
-
-const SupperBtn = styled(StyledBtn)`
-  border-radius: 5px;
-  background-color: #04eaff;
-`
-
 const Box = styled.div`
   height: 100vh;
   display: flex;
@@ -69,20 +40,8 @@ const Box = styled.div`
   ${Link} {
     cursor: zoom-in;
   }
-`
-
-const Menu = styled.nav`
-ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
   
-  li > a {
-    color: green;
-  }
-  
-  li+li {
-    margin-left: 20px;
-  }
-}
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  } 
 `
