@@ -2,23 +2,22 @@ import React from 'react';
 import styled from "styled-components";
 import {StyledBtn, SupperBtn} from "./components/Button.styled";
 import {Link} from "./components/Link.styled";
-import {Menu} from "./components/Menu.styled";
+
 
 function App() {
     return (
         <div className="App">
-            <Menu>
-                <ul>
-                    <li><a href="">menu item 1</a></li>
-                    <li><a href="">menu item 2</a></li>
-                    <li><a href="">menu item 3</a></li>
-                </ul>
-            </Menu>
             <Box>
-                <StyledBtn as={Link} href="#">Link Component</StyledBtn>
-                <StyledBtn as="a" href="#"> Link HELLO WORLD</StyledBtn>
-                <StyledBtn> HELLO WORLD</StyledBtn>
-                <SupperBtn> SUPER HELLO WORLD</SupperBtn>
+                {/*<StyledBtn*/}
+                {/*    color="red"*/}
+                {/*fontSize="20px"*/}
+                {/*> HELLO WORLD</StyledBtn>*/}
+                {/*<StyledBtn color="yellow"> HELLO WORLD</StyledBtn>*/}
+                {/*<StyledBtn> HELLO WORLD</StyledBtn>*/}
+                {/*<input type="text"/>*/}
+
+                <StyledBtn btnType="primary" active> HELLO WORLD</StyledBtn>
+                <StyledBtn btnType="outlined"> HELLO WORLD</StyledBtn>
             </Box>
         </div>
     );
