@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {StyledBtn, SupperBtn} from "./components/Button.styled";
 import {Link} from "./components/Link.styled";
+import {myTheme} from "./styles/Theme.styled";
 
 
 function App() {
@@ -40,7 +41,7 @@ const Box = styled.div`
     cursor: zoom-in;
   }
   
-  @media screen and (max-width: 800px) {
+  @media ${myTheme.media.tablet} {
     flex-direction: column;
   } 
 `
